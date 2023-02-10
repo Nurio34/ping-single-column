@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Ping single column coming soon page hub</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/b69fb5b7db.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b69fb5b7db.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <main>
+
+        <header>
+            <img src="images/logo.svg" alt="logo writing ping">
+            <p>We are launching <span>soon!</span></p>
+            <p>Subscribe and get notified</p>
+        </header>
+
+        <form action="#" method="post">
+            <input id="input" type="email" name="Email" required placeholder="Your email address..">
+            <p aria-label="Warning" id="Warning">Please provide a valid email address</p>
+            <button type="submit" onclick="myFunc()">Notify Me</button>
+        </form>
+
+        <section>
+            <img src="images/illustration-dashboard.png" alt="dashboard with 4 graphics">
+        </section>
+
+        <footer>
+            <nav>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </nav>
+            <p>&copy; Copyright Ping. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <!-- <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Your Name Here</a>.
+        </p>
+      </footer> -->
+
+      <script>
+        function myFunc(){
+            document.getElementById("Warning").style="display:block";
+        }
+      </script>
+</body>
+
+</html>

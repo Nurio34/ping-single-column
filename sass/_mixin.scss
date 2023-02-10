@@ -1,0 +1,39 @@
+@mixin general ($clr,$bg-clr,$ff,$fs,$fw,$txt-algn) {
+    
+    color : $clr;
+    background: $bg-clr;
+    font : {
+        family : $ff ;
+        size : $fs;
+        weight : $fw;
+    }
+    text : {
+        align : $txt-algn; 
+    }
+}
+
+@mixin font ($clr,$ff,$fs,$fw) {
+    color : $clr;
+    font : {
+        family : $ff;
+        size : $fs;
+        weight : $fw;
+    }
+}
+
+@mixin flex ($dsply,$drctn,$jstfy-cntnt,$algn-itms,$gp) {
+    display : $dsply;
+    flex-direction : $drctn;
+    justify-content : $jstfy-cntnt;
+    align-items : $algn-itms;
+    gap : $gp
+}
+@mixin grid ($dsply,$jstfy-cntnt,$algn-itms,$clmns,$rws,$cg,$rg) {
+    display : $dsply;
+    justify-content : $jstfy-cntnt;
+    align-items : $algn-itms;
+    grid-template-columns: $clmns;
+    grid-template-rows: $rws;
+    column-gap: $cg;
+    row-gap: $rg;
+}
